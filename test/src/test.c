@@ -31,7 +31,7 @@ int main(void) {
 		sleep(s);
 //		execl("/bin/echo","","this is in son",NULL);
 //		execl("/bin/ls","","/",NULL);
-		execl("/root/workspace/test1/Debug/test1","geee","aa","bb","cc",NULL);
+		execl("../test1/Debug/test1","geee","aa","bb","cc",NULL);
 	}
 	else{
 		waitpid(pid,&status,0);
