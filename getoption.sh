@@ -1,5 +1,5 @@
 #!/bin/bash
-echo $*
+echo "$*:$# arguments"
 
 while getopts ":a:bcde" opt
 do 
@@ -13,8 +13,12 @@ do
 	c)
 	echo "option c is set, in position ${OPTIND}"
 	;;
-	?)
-	echo "unrecognized option, error, exit"
+	"?")
+	echo "unrecognized option $opt , error, exit"
+	;;
+	*)
+	echo other options
+
 	;;
 	esac
 done
