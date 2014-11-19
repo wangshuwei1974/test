@@ -19,6 +19,7 @@ int main(void) {
 	s = 10;
 	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
 	puts("!!!Hello World and Git !!!"); /* prints !!!Hello World!!! */
+	puts("add another line for test git");
 	printf("hello world,parent pid=%d\n",getpid());
 	pid = fork();
 	printf("this is test for branch,the pid is :%d\n",getpid());
